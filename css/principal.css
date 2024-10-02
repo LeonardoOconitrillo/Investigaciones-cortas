@@ -1,0 +1,34 @@
+.logo img{
+
+    width: 10%;
+}
+header {
+    display: flex;
+    justify-content: center;  
+    align-items: flex-end;    
+    background-image: url("../img/portad2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    height: 20vh;            
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 20px;      
+    font-size: 2em;
+}
+blockquote::before{
+    content: open-quote;
+}
+blockquote::after{
+    content: close-quote;
+}
+.logo{
+    background-color: #f97f19;    
+}
+.logo img{
+
+    width: 10%;
+}
