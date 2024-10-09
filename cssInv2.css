@@ -1,0 +1,134 @@
+nav{
+    display: flex;
+    justify-content: center;
+    list-style:symbols(); 
+    border: none;
+    background-color: green;
+}
+
+
+header {
+    color: #fff;
+    padding: 1em 0;
+    padding-bottom: 1px; 
+    overflow: hidden;
+    background-color: #e1e193;
+}
+
+h1 {
+    color: black;            
+    text-align: center;    
+    background-color: #e1e193; 
+    padding: 7px;
+  
+}
+
+h2 {
+    font-size: 2rem;              
+    font-weight: 600;             
+    text-align: left;             
+    position: relative;           
+    margin-bottom: 20px;         
+    padding-left: 10px;           
+    font-family: 'Arial', sans-serif; 
+}
+
+h2::before {
+    content: '';                 
+    position: absolute;           
+    left: 0;                      
+    top: 50%;                     
+    transform: translateY(-50%);  
+    width: 5px;                  
+    height: 80%;                  
+    background-color: #e1e193;    
+    border-radius: 2px;           
+}
+
+h3 {
+    font-size: 2em;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 2px #ccc;
+}
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+}
+
+.imagen {
+    max-width: 100%; 
+    height: auto; 
+    display: block; 
+}
+.contenedor-texto {
+    flex: 1; 
+}
+
+p {
+    margin: 0 0 10px; 
+}
+
+@media (max-width: 768px) {
+    .contenedor {
+        flex-direction: column; 
+    }
+
+    .imagen {
+        width: 100%; 
+        height: auto; 
+    }
+}
+
+#section1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.scroll-down {
+    display: inline-block;
+    font-size: 3rem; 
+    color: #e1e193 ; 
+    text-decoration: none; 
+    margin-top: 20px; 
+    animation: bounce 2s infinite; 
+}
+
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+}
+
+
+.scroll-down:hover {
+    color: #FFAB61; 
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+.pie-pagina {
+    background-color: black; 
+    color: #ffffff; 
+    padding: 20px; 
+    text-align: center; 
+    font-size: 14px; 
+    position: relative; 
+    width: 100%; /* Asegurarse de que ocupa todo el ancho */
+}
